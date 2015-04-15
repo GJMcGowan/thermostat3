@@ -4,6 +4,8 @@ describe('Display', function(){
     thermostat = new Thermostat();
     jasmine.getFixtures().fixturesPath = '.';
     loadFixtures('temperature_change.html');
+    jasmine.getStyleFixtures().fixturesPath = './public/css';
+    loadStyleFixtures('stylesheet.css');
   });
 
   it('displays the temperature', function(){
@@ -43,7 +45,25 @@ describe('Display', function(){
   });
 
   it('can start as yellow', function(){
-    expect($('#temperature').css('color')).toEqual('yellow');
+    expect($('#temperature').css('color')).toEqual('rgb(255, 255, 0)');
+  });
+  
+  it('can switch to green', function(){
+    $('#down').click();
+    $('#down').click();
+    $('#down').click();
+    expect($('#temperature').css('color')).toEqual('rgb(0, 128, 0)');
+  });
+
+  it('can switch to red', function(){
+    $('#powersaving').click();
+    $('#up').click();
+    $('#up').click();
+    $('#up').click();
+    $('#up').click();
+    $('#up').click();
+    $('#up').click();
+    expect($('#temperature').css('color')).toEqual('rgb(255, 0, 0)')
   });
 
 });
