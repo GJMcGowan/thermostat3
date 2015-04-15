@@ -1,19 +1,26 @@
-<script src='lib/jquery-2.1.3.js'></script>
-<script src='src/Thermostat.js'></script>
-<script src='src/display.js'></script>
-
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+      body {
+        background-color: navy;
+        color: white;
+      }
+    </style>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='src/Thermostat.js'></script>
+    <script src='src/Display.js'></script>
     <title>Thermostat web app</title>
   </head> 
 
   <body>
-    Select your temperature here
-    <h1><b><div id='temperature'></div></b></h1>
+    <h2>Select your temperature here</h2>
+    <h1><b><div style="color:yellow;" id='temperature'></div></b></h1>
     <br>
     <button type="button" id='up'>Up</button>
     <button type="button" id="down">Down</button>
-  </body>
+    <button type="button" id="reset">Reset</button>
+    <input type="checkbox" id='powersaving' checked/>Powersaving
 
+  </body>
 </html>

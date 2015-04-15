@@ -25,6 +25,7 @@ Thermostat.prototype.down = function(){
 
 Thermostat.prototype.resetTemp = function(){
   this.temperature = 20;
+  this.colour();
 };
 
 Thermostat.prototype.colour = function(){
