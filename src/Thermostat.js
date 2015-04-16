@@ -1,7 +1,7 @@
 var Thermostat = function() {
   this.temperature = 20;
   this.powersaving = true;
-  this.tempColour = "Yellow";
+  this.tempColour = "Gold";
 };
 
 Thermostat.prototype.up = function(){
@@ -33,7 +33,7 @@ Thermostat.prototype.colour = function(){
     this.tempColour = "Green";
   };
   if(this.temperature >= 18 && this.temperature <= 25){
-    this.tempColour = "Yellow";
+    this.tempColour = "Gold";
   };
   if(this.temperature > 25){
     this.tempColour = "Red";

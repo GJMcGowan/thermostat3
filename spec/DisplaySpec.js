@@ -46,7 +46,7 @@ describe('Display', function(){
     expect($('#powersaving').prop('checked')).toBe(true)
   });
 
-  it('can start as yellow', function(){
+  it('can start as gold', function(){
     expect($('#temperature').css('color')).toEqual('rgb(255, 255, 0)');
   });
   

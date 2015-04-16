@@ -1,8 +1,27 @@
-body {
-  background-color: navy;
-  color: white;
+/* Typography */
+p {
+  color: grey;
+  font-size: 2em;
 }
 
+/* Body */
+
+body {
+    background-image: url("/public/images/white-wall.jpg");
+    background-color: #cccccc;
+}
+
+/* Classes */
+
+.center {
+    width: 300px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Element Specific */
+
 #temperature { 
-  color: yellow;
+  color: gold;
+  font-size: 3em;
 }

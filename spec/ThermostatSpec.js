@@ -61,14 +61,14 @@ describe('Thermostat', function(){
       thermostat.temperature = 17;
       thermostat.tempColour = "Green";
       thermostat.up();
-      expect(thermostat.tempColour).toEqual("Yellow");
+      expect(thermostat.tempColour).toEqual("Gold");
     });
 
     it('changes to yellow when temperature falls below 25', function(){
       thermostat.temperature = 26;
       thermostat.tempColour = "Red";
       thermostat.down();
-      expect(thermostat.tempColour).toEqual("Yellow");
+      expect(thermostat.tempColour).toEqual("Gold");
     });
 
     it('changes to red when temperature rises above 25', function(){

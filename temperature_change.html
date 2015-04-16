@@ -8,15 +8,17 @@
     <title>Thermostat web app</title>
   </head> 
 
-  <body>
-    <h2>Select your temperature here</h2>
-    <h1><b><div id='temperature'></div></b></h1>
-    <br>
-    <button type="button" id='up'>Up</button>
-    <button type="button" id="down">Down</button>
-    <button type="button" id="reset">Reset</button>
-    <input type="checkbox" id='powersaving' checked/>Powersaving
-
+  <body class="center">
+    <p>
+      Select Temperature
+      <div id='temperature'></div>
+    </p>
+    <p>
+      <input id='up' type='button' value='&#8593;'>
+      <input id='down' type='button' value='&#8595;'>
+      <button type="button" id="reset">Reset</button>
+      <input type="checkbox" id='powersaving' checked/>
+      Powersaving
+    </p>
   </body>
 </html>
-
