@@ -4,8 +4,10 @@ describe('Display', function(){
     thermostat = new Thermostat();
     jasmine.getFixtures().fixturesPath = '.';
     loadFixtures('temperature_change.html');
-    jasmine.getStyleFixtures().fixturesPath = './public/css';
-    loadStyleFixtures('stylesheet.css');
+    // jasmine.getStyleFixtures().fixturesPath = './public/css';
+    // loadStyleFixtures('stylesheet.css');
+    //setStyleFixtures('#temperature { color: yellow; }')
+    $('#temperature').css('color','yellow');
   });
 
   it('displays the temperature', function(){

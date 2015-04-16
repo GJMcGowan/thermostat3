@@ -1,12 +1,8 @@
 body {
-
-background-color: navy;
-        color: white;
-
+  background-color: navy;
+  color: white;
 }
 
 #temperature { 
-
   color: yellow;
-  
 }
