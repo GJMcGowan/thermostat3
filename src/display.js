@@ -3,6 +3,7 @@ $(document).ready(function(){
   var thermostat = new Thermostat();
   
   $('#temperature').text(thermostat.temperature);
+  $('#powersavingOn').text(thermostat.powersaving);
 
   $('#up').click(function(){
     thermostat.up();
@@ -24,8 +25,10 @@ $(document).ready(function(){
 
   $('#powersaving').change(function(){
     if (thermostat.powersaving) {
-      return thermostat.powersaving = false; 
+      thermostat.powersaving = false; 
+    } else {
+      thermostat.powersaving = true;
     };
-    thermostat.powersaving = true;
+    $('#powersavingOn').text(thermostat.powersaving);
   });
 });
