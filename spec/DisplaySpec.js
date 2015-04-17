@@ -2,12 +2,10 @@ describe('Display', function(){
 
   beforeEach(function(){
     thermostat = new Thermostat();
+    jasmine.getStyleFixtures().fixturesPath = './public/css';
+    loadStyleFixtures('stylesheet.css');
     jasmine.getFixtures().fixturesPath = '.';
     loadFixtures('temperature_change.html');
-    // jasmine.getStyleFixtures().fixturesPath = './public/css';
-    // loadStyleFixtures('stylesheet.css');
-    //setStyleFixtures('#temperature { color: yellow; }')
-    $('#temperature').css('color','yellow');
   });
 
   it('displays the temperature', function(){
@@ -47,7 +45,7 @@ describe('Display', function(){
   });
 
   it('can start as gold', function(){
-    expect($('#temperature').css('color')).toEqual('rgb(255, 255, 0)');
+    expect($('#temperature').css('color')).toEqual('rgb(255, 215, 0)');
   });
   
   it('can switch to green', function(){
