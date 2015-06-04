@@ -1,4 +1,4 @@
-![Alt text](/public/image.png?raw=true "Optional Title")
+![Alt text](/public/images/image.png?raw=true "Optional Title")
 
 ## Installation and Testing
 
