@@ -1,4 +1,4 @@
-![Alt text](/public/images/image.png?raw=true "Optional Title")
+![Alt text](https://raw.githubusercontent.com/GJMcGowan/thermostat3/master/public/images/Image.png)
 
 ## Installation and Testing
 
