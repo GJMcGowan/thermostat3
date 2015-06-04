@@ -39,3 +39,10 @@ Thermostat.prototype.colour = function(){
     this.tempColour = "Red";
   };
 };
+
+Thermostat.prototype.powerSave = function() {
+  if(this.temperature > 25){
+    this.temperature = 25;
+    this.colour();
+  };
+};

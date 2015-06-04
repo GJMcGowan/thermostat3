@@ -5,22 +5,24 @@ $(document).ready(function(){
   $('#temperature').text(thermostat.temperature);
   $('#powersavingOn').text(thermostat.powersaving);
 
-  $('#up').click(function(){
-    thermostat.up();
+  var updateColor = function(){
     $('#temperature').text(thermostat.temperature);
     $('#temperature').css("color", thermostat.tempColour);
+  };
+
+  $('#up').click(function(){
+    thermostat.up();
+    updateColor();
   });
 
   $('#down').click(function(){
     thermostat.down();
-    $('#temperature').text(thermostat.temperature);
-    $('#temperature').css("color", thermostat.tempColour);
+    updateColor();
   });
 
   $('#reset').click(function(){
     thermostat.resetTemp();
-    $('#temperature').text(thermostat.temperature);
-    $('#temperature').css("color", thermostat.tempColour);
+    updateColor();
   });
 
   $('#powersaving').change(function(){
@@ -28,6 +30,8 @@ $(document).ready(function(){
       thermostat.powersaving = false; 
     } else {
       thermostat.powersaving = true;
+      thermostat.powerSave();
+      updateColor();
     };
     $('#powersavingOn').text(thermostat.powersaving);
   });
