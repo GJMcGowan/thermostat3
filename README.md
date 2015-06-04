@@ -1,4 +1,4 @@
-Thermostat web app in Javascript
+![alt tag](https://raw.github.com/GJMcGowan/thermostat3/master/public/image.png)
 
 ## Installation and Testing
 
